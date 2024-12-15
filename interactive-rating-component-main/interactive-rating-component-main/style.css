@@ -1,0 +1,138 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: rgb(2, 5, 26);
+    margin: 0;
+}
+.box{
+    background-color: #00094B;
+    position: absolute;
+    border: none;
+    border-radius: 9px;
+    padding: 35px 35px 0px 35px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 50%;
+    width: 20%;
+   
+}
+.logo{
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+    background-color: #181d3d;
+    border: 1px solid none;
+    border-radius: 20px;
+}
+.num{
+
+    display: flex;
+   justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    
+   
+   
+}
+ .one,.two, .three, .four, .five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: #181d3d;
+    width: 13px; 
+    height: 13px;
+   padding: 15px;
+    border:  none;
+    border-radius: 50%;
+    color: white; /* Text color for better contrast */
+    font-weight: bold;
+    font-size: large;
+}   
+.num div:hover{
+    transition: 0.3s;
+    background-color:#FF5349 ;
+    cursor: pointer;
+}
+.num div:active{
+    color: black;
+    background-color: white;
+}
+button{
+   background-color: #FF5349;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border: none;
+   border-radius: 40px;
+   width:  100%;
+   padding: 10px 120px 10px 120px;
+   font-weight: bold;
+   font-size:15px;
+   margin-bottom: 20px;
+
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    }
+
+
+    .popup{
+    background-color: #00094B;
+    position: absolute;
+    /* top: 0;  */
+    border: none;
+    border-radius: 9px;
+    padding:35px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    transition: 200ms ease-in-out;
+    height: 50%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* visibility: hidden; */
+    text-align: center;
+    
+   
+}
+.popup.active{
+ transform: translate(-50% , -50%) scale(1);
+}
+
+
+
+.popup .select{
+    margin-top: 15px;
+    border: 1px solid none ;
+    border-radius: 15px;
+    padding: 7px;
+    color: #FF5349;
+    background-color:#181d3d ;
+
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black .5;
+    pointer-events: none;
+}
+
+#overlay:active{
+    opacity: 1;
+    pointer-events: all;
+}
