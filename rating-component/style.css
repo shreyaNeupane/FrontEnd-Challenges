@@ -93,8 +93,8 @@ button:hover{
     left: 50%;
     transform: translate(-50% , -50%) scale(0);
     transition: 200ms ease-in-out;
-    height: 50%;
-    width: 20%;
+    height: 90%;
+    width: 82%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,11 +109,6 @@ button:hover{
     top: 50%;
     transform:  translate(-50% , -50%) scale(1);;
 }
-
-
-
-
-
 .popup .select{
     margin-top: 15px;
     border: 1px solid none ;
@@ -123,7 +118,6 @@ button:hover{
     background-color:#181d3d ;
 
 }
-
 #overlay{
     position: fixed;
     opacity: 0;
@@ -139,4 +133,8 @@ button:hover{
 #overlay:active{
     opacity: 1;
     pointer-events: all;
+}
+.selected{
+    background-color: #FF5349;
+    color: white;
 }
