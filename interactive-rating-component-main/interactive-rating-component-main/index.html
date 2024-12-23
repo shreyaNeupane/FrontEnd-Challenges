@@ -13,7 +13,7 @@
   </head>
 <body>
 
-   <!-- <div class="box">
+   <div class="box">
     <div class="logo">
     <img src="images/icon-star.svg" alt="" srcset="">
     </div>
@@ -21,17 +21,17 @@
     <p>  Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
   <div class="num">
-    <div class="one">1</div>
-    <div class="two">2</div>
-    <div class="three">3</div>
-    <div class="four">4</div>
-    <div class="five">5</div>
+    <div  id="one"  class="nums" onclick="gfg(1)">1</div>
+    <div id="two" class="nums" onclick="gfg(2)">2</div>
+    <div id="three" class="nums" onclick="gfg(3)">3</div>
+    <div id="four" class="nums" onclick="gfg(4)">4</div>
+    <div id="five" class="nums" onclick="gfg(5)">5</div>
   </div>
-  <button type="submit" onclick="openPopup()">SUBMIT</button> -->
- <!-- popup message -->
-     <div class="popup active" id="popup">
+  <button type="button" onclick="openPopup()">SUBMIT</button>
+ <!-------------------- popup message --------------------------->
+     <div class="popup" id="popup">
      <img src="images/illustration-thank-you.svg" alt="">
-    <button type="submit" class="select" onclick="closePopup()"> You selected <!-- Add rating here --> out of 5 </button>
+    <button type="button" class="select" id="output" onclick="closePopup()"> You selected <!-- Add rating here --> out of 5 </button>
 
     <h3>Thank You!</h3>
    
@@ -40,9 +40,7 @@
 
    </div>
   </div> 
-  <div  id="overlay" class="active">
-
-  </div>
+ 
   
 
 
@@ -54,15 +52,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Shreya Neupane</a>
   </div>
-  <script>
-    let popup = document.getElementById("popup");
-
-    function openPopup(){
-      popup.classList.add("open-popup"); 
-    }
-    function closePopup(){
-      popup.classList.remove("open-popup"); 
-    }
-  </script>
+  <script src="rating.js"></script>
 </body>
 </html>

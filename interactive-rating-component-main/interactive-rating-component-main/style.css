@@ -37,7 +37,7 @@ body{
    
    
 }
- .one,.two, .three, .four, .five{
+ #one,#two, #three, #four, #five{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,7 @@ button:hover{
     .popup{
     background-color: #00094B;
     position: absolute;
-    /* top: 0;  */
+    top: 0; 
     border: none;
     border-radius: 9px;
     padding:35px;
@@ -99,14 +99,18 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* visibility: hidden; */
+    visibility: hidden; 
     text-align: center;
     
    
 }
-.popup.active{
- transform: translate(-50% , -50%) scale(1);
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform:  translate(-50% , -50%) scale(1);;
 }
+
+
 
 
 
