@@ -133,7 +133,7 @@ button{
 
 
     /* Responsive Design for phones */
-@media (max-width: 400px) {
+ @media (max-width: 400px) { /*if the screen max-width is 400px and less */
     body {
         font-size: 18.4px;
         margin: 1rem;
