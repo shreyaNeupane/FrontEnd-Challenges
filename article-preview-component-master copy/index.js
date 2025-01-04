@@ -1,14 +1,35 @@
-let footer = document.querySelector(".footer");
-let shareOption = document.querySelector(".hover");
-shareOption.style.display = "none";
-function showHideUsers() {
-  if (shareOption.style.display === "block") {
-    // Hide the share options and show the footer content
-    shareOption.style.display = "none";
-    footer.style.display = "flex"; // Adjust based on your layout
-  } else {
-    // Show the share options and hide the footer content
-    shareOption.style.display = "block";
-    footer.style.display = "none";
-  }
+// Desktop Share Button Toggle
+
+const desktopShareBtn = document.getElementById("desktop-share-btn")
+
+desktopShareBtn.addEventListener("click", toggleDesktopShare)
+
+function toggleDesktopShare() {
+
+    const shareShapeContainer = document.querySelector(".share-shape-container");
+
+    shareShapeContainer.classList.toggle("display-none");
 }
+
+// Mobile Share Bar
+
+const mobileAuthorArea = document.querySelector(".mobile-author-area")
+
+const mobileSocialSharingBar = document.querySelector(
+  ".mobile-social-sharing-bar");
+
+const mobileShareBtnContainer = document.querySelector(
+  ".mobile-share-btn-container");
+
+  mobileShareBtnContainer.addEventListener("click", function() {
+       mobileAuthorArea.style.display ="none";
+       mobileSocialSharingBar.style.display ="flex";
+  })
+
+  const mobileSocialSharingBtn = document.querySelector(
+    ".mobile-social-sharing-btn-container"
+  );
+  mobileSocialSharingBtn.addEventListener("click" , function(){
+     mobileAuthorArea.style.display = "flex";
+     mobileSocialSharingBar.style.display = "none";
+  })
