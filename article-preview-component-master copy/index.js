@@ -11,7 +11,7 @@ function toggleDesktopShare() {
     shareShapeContainer.classList.toggle("display-none");
 }
 
-// Mobile Share Bar
+// -------------------Mobile Share Bar ----------------------------
 
 const mobileAuthorArea = document.querySelector(".mobile-author-area")
 
